@@ -1,0 +1,20 @@
+# For Python Programming
+import os
+def shutdown_PC():
+os.system("shutdown /s /t 1")
+shutdown_PC()
+
+// For Java Programming
+
+public class ShutdownComputer {
+public static void main(String[] args) throws IOException {
+
+	Scanner scanner = new Scanner(System.in);
+    
+    System.out.println("Time in Seconds: ");
+    Double timeInSeconds = scanner.nextDouble();
+    Runtime runtime = Runtime.getRuntime();
+    Process p = runtime.exec("shutdown -s -t " + timeInSeconds);
+    System.exit(1);
+    }
+ }
